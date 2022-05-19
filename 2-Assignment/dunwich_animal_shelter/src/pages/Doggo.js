@@ -60,11 +60,11 @@ const Doggo = () => {
             <p>Any attempt to circumvent the test or to house a dog that does not fit your cognitive level will result in felony charges.</p>
 
 
-            <Header title= "Fluffy dogs to a adopt"/>
+            <Header title= "Dunwich Animal Hospital"/>
             <Container className ={classes.cardGrid} maxWidth="md">
-                <Grid container spacing={5}>
+                <Grid container spacing={9}>
                     {cards.map((card) => (
-                        <Grid item key={card.id} xs={12} sm={6} md= '5'>
+                        <Grid item key={card.id} xs={12} sm={7} md= '6'>
                             <Card>
                                 <CardMedia
                                     className={classes.cardMedia}
@@ -73,10 +73,10 @@ const Doggo = () => {
                                     
                                 />
                                 <CardContent className={classes.cardContent}>
-                                    <Typography align="left" variant="h5" component="h2" gutterBottom>
+                                    <Typography align="center" variant="h5" component="h2" gutterBottom>
                                         {card.name}
                                     </Typography> 
-                                    <Typography align="left">
+                                    <Typography align="center">
                                         {card.breed}
                                     </Typography>
                                 </CardContent>

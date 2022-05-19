@@ -12,15 +12,15 @@
       "cognoHazardThreat": "very low"
     },
     {
-      "id": 2,
       "name": "Angel",
       "breed": "Labrador",
-      "sex": "Female",
       "age": "5",
+      "sex": "Female",
       "picture": "https://images.dog.ceo/breeds/labrador/n02099712_2234.jpg",
       "favoriteToy": "Pink tennis ball",
       "story": "Angel was found by a dockworker near the boat ramps. Smells of seawater",
-      "cognoHazardThreat": "low"
+      "cognoHazardThreat": "low",
+      "id": 2
     },
     {
       "id": 3,
@@ -28,21 +28,21 @@
       "breed": " Bulldog",
       "sex": "Female",
       "age": "3",
-      "picture": "https://dog.ceo/api/breed/Affenpinscher/images/random/",
+      "picture": "https://images.dog.ceo/breeds/bulldog-french/n02108915_2980.jpg",
       "favoriteToy": "A collar with what appears to be a fossil of a shell, Kaiser will repeatedly bark if the coller is taken off.",
       "story": "Kaiser was found under the Matthew Perry bridge in the industral district. Smells of rotting fish",
       "cognoHazardThreat": "Medium"
     },
     {
-      "id": 4,
       "name": "Sir William the third",
       "breed": "pomeranian",
-      "sex": "Male",
       "age": "7",
-      "picture": "https://source.unsplash.com/collection/1131562/",
+      "sex": "Male",
+      "picture": "https://images.dog.ceo/breeds/pomeranian/n02112018_10309.jpg",
       "favoriteToy": "A necklace of shark teeth with the inscription 'From your husband with love, RF'",
       "story": "William was found alone in the Wensborrow estate amid the disappearance of his owner; lady Abigale Flynn, Wife to the former CEO of the Dunwich Offshore Oil Company. Becuase William will at random intervals have oil on his paws, it is recommended that future adopters have a non carpeted home.",
-      "cognoHazardThreat": "Med-High"
+      "cognoHazardThreat": "Medium-High",
+      "id": 4
     },
     {
       "id": 5,
@@ -56,15 +56,15 @@
       "cognoHazardThreat": "High"
     },
     {
-      "id": 6,
       "name": "Άγνωστο",
       "breed": "{REDIGIDO}",
+      "age": "ERROR INTEGER OVER LIMIT",
       "sex": "onbekend",
-      "age": "ERROR INTEGER OVER CHAR LIMIT",
-      "picture": "مجهول",
+      "picture": "https://images.unsplash.com/photo-1602101319087-18d00e6109c0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735",
       "favoriteToy": "{REDACTED}",
       "story": "m̶̭̳̀̓͛̾a̷͓̐n̶̢͓̅̉'̴͚͒s̸͖̺̖̓ ̵̬̋̕͘b̶̤͑ĕ̸̗̎̓̆ş̴̘̋̊t̶̮̜̟̐ ̷͉̲̐͠f̴̣̘̼̀̆͘r̶̝̖͋͋͛̊i̵̤̰̇͜e̴̢̺̤̎ṉ̷͌̏̂͠d̴̥͖̂̅̋",
-      "cognoHazardThreat": "NULL"
+      "cognoHazardThreat": "Incomprehensibly low",
+      "id": 6
     }
   ]
 }

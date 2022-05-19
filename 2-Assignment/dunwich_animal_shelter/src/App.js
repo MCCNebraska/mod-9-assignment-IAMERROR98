@@ -35,13 +35,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     position: "absolute",
     width: '100%',
-    //position: 'fixed',
-    //left: 0,
-    //bottom: 0,
-    //color: white,
-    //display: "flex",
     textAlign: 'center',
-    //justifyContent: 'center',
     padding: theme.spacing(3)
     
   }

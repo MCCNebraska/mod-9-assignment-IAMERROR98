@@ -1,4 +1,4 @@
-import { Button, TextField } from "@material-ui/core";
+import { Button, TextField, useMediaQuery } from "@material-ui/core";
 import { useForm, Controller } from 'react-hook-form';
 import React, { useEffect, useState } from "react";
 import settings from '../data/settings';
@@ -10,6 +10,7 @@ import Header from '../components/header'
 
 const AddDog = (props) => {
 
+    const matches = useMediaQuery("(min-width:1200px")
     const history = useHistory();
 
     //grabs the id
@@ -19,10 +20,13 @@ const AddDog = (props) => {
         {
             name: '',
             breed: '',
+            sex: '',
             age: '',
             picture: '',
             favoriteToy: '',
-            story: ''
+            story: '',
+            cognoHazardThreat: ''
+
         }
     );
 
@@ -48,16 +52,18 @@ const AddDog = (props) => {
             name: data.name,
             breed: data.breed,
             age: data.age,
+            sex: data.sex,
             picture: data.picture,
             favoriteToy: data.favoriteToy,
-            story: data.story
+            story: data.story,
+            cognoHazardThreat: data.cognoHazardThreat
             
         })
     };
 
     const onSubmit = data => {
         let method = 'GET';
-        let url ="";
+        let url = "";
         //if id is not found than create
         if (!id)
         {
@@ -90,7 +96,7 @@ const AddDog = (props) => {
 
     return(
         <>
-            <Header />
+            <Header title= "Add a dog to the databank" />
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
                 <Controller name = 'name' control={control} setValue={setValue} render={({field}) => (
                     <TextField label='Name' fullWidth value={inputData.name} {...field} />
@@ -100,12 +106,16 @@ const AddDog = (props) => {
                     <TextField label='Breed' fullWidth value={inputData.breed} {...field} />
                 )}/>
 
+               <Controller name = 'age' control={control} setValue={setValue} render={({field}) => (
+                    <TextField label= 'Age' fullWidth value={inputData.age} {...field} />
+                )}/>
+
                 <Controller name = 'sex' control={control} setValue={setValue} render={({field}) => (
-                    <TextField label='Sex' fullWidth value={inputData.sex} {...field} />
+                    <TextField label='Sex' fullWidth value={inputData.Sex} {...field} />
                 )}/>
 
                 <Controller name = 'picture' control={control} setValue={setValue} render={({field}) => (
-                    <TextField label='Picture' fullWidth value={inputData.picture} {...field} />
+                    <TextField label='Picture' multiline={true} fullWidth value={inputData.picture} {...field} />
                 )}/>
 
                 <Controller name = 'favoriteToy' control={control} setValue={setValue} render={({field}) => (
@@ -113,7 +123,11 @@ const AddDog = (props) => {
                 )}/>
 
                 <Controller name = 'story' control={control} setValue={setValue} render={({field}) => (
-                    <TextField label='Story' fullWidth value={inputData.story} {...field} />
+                    <TextField label='Story' multiline={true} fullWidth value={inputData.story} {...field} />
+                )}/>
+
+                <Controller name = 'cognoHazardThreat' control={control} setValue={setValue} render={({field}) => (
+                    <TextField label='Threat Level' fullWidth value={inputData.cognoHazardThreat} {...field} />
                 )}/>
                 
                 <Button variant="contained" color="primary" type="submit">

@@ -7,8 +7,23 @@ import { useHistory } from "react-router-dom";
 import settings from "../data/settings";
 import { DataGrid } from '@material-ui/data-grid';
 //import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 
 const Admin = () => {
+    
+    const useStyles = makeStyles((theme) => ({
+        grid: {
+            [theme.breakpoints.up('sm')]: {
+                width: '80%'
+            },
+            [theme.breakpoints.up('lg')]: {
+                width: '40%'
+              },
+
+        }
+    }));
+    const classes = useStyles();
     const history = useHistory();
 
     const[rows, setRows] = useState([]);
@@ -51,7 +66,7 @@ const Admin = () => {
     const handleEdit = (e) =>{
         const itemId = e.currentTarget.parentElement.getAttribute('data-value');
 
-        history.push("/create/edit/" + itemId);
+        history.push("/addDog/edit/" + itemId);
     };
 
     const columns = [
@@ -72,10 +87,12 @@ const Admin = () => {
     //center this
     return(
         <>
-            <Header title="Overseer Controll"/>
-            <div style={{ height: 700, width: '40%'}}>
-                <DataGrid rows={rows} columns={columns} pageSize={6} checkboxSelection/>
-            </div> 
+            <Header title="Overseer Control"/>
+            <h2>Warning!</h2>
+            <h3>Any changes must be approved by an overseer with clearence level Beta!</h3>
+            
+                <DataGrid className={classes.grid} rows={rows} columns={columns} pageSize={6} checkboxSelection/>
+            
             <Button variant="contained" color="primary" onClick={handlerCreate}>
                 Create a new article
             </Button>    
