@@ -1,0 +1,70 @@
+{
+    "Dogs":[
+        {
+            "id": 1,
+            "name": "Copper",
+            "breed": "Beagel",
+            "sex": "Male",
+            "age": "2",
+            "picture": "https://images.dog.ceo/breeds/beagle/n02088364_14220.jpg",            
+            "favoriteToy": "squeeky chicken",
+            "story": "This lovable dog was found next to a N 101 highway. Great with kids",
+            "cognoHazardThreat": "very low"
+        },
+        {
+            "id": 2,
+            "name": "Angel",
+            "breed": "Labrador",
+            "sex": "Female",
+            "age": "5",
+            "picture":"https://dog.ceo/api/breed/hound/images/random/3",
+            "favoriteToy": "Pink tennis ball",
+            "story": "Angel was found by a dockworker near the boat ramps. Smells of seawater",
+            "cognoHazardThreat": "low"
+        },
+        {
+            "id": 3,
+            "name": "Kaiser",
+            "breed": " Bulldog",
+            "sex": "Female",
+            "age": "3",
+            "picture":"https://dog.ceo/api/breed/Affenpinscher/images/random/",
+            "favoriteToy": "A collar with what appears to be a fossil of a shell, Kaiser will repeatedly bark if the coller is taken off.",
+            "story": "Kaiser was found under the Matthew Perry bridge in the industral district. Smells of rotting fish",
+            "cognoHazardThreat": "Medium"
+        },
+        {
+            "id": 4,
+            "name": "Sir William the third",
+            "breed": "pomeranian",
+            "sex": "Male",
+            "age": "7",
+            "picture":"https://source.unsplash.com/collection/1131562/",
+            "favoriteToy": "A necklace of shark teeth with the inscription 'From your husband with love, RF'",
+            "story": "William was found alone in the Wensborrow estate amid the disappearance of his owner; lady Abigale Flynn, Wife to the former CEO of the Dunwich Offshore Oil Company. Becuase William will at random intervals have oil on his paws, it is recommended that future adopters have a non carpeted home.",
+            "cognoHazardThreat": "Med-High"
+        },
+        {
+            "id": 5,
+            "name": "Pricus",
+            "breed": "Unknown mix",
+            "sex": "Male?",
+            "age": "2-6",
+            "picture":"{REDACTED}",
+            "favoriteToy": "{REDACTED}",
+            "story": "Pricus was found in a police raid on the headquarters of the terrorist group: 'The Fishermen of {REDACTED}' near the industrial district. It is recommended the potential adopters have a large indoor pool.",
+            "cognoHazardThreat": "High"
+        },
+        {
+            "id": 6,
+            "name": "Άγνωστο",
+            "breed": "{REDIGIDO}",
+            "sex": "onbekend",
+            "age": "ERROR INTEGER OVER CHAR LIMIT",
+            "picture":"مجهول",
+            "favoriteToy": "{REDACTED}",
+            "story": "m̶̭̳̀̓͛̾a̷͓̐n̶̢͓̅̉'̴͚͒s̸͖̺̖̓ ̵̬̋̕͘b̶̤͑ĕ̸̗̎̓̆ş̴̘̋̊t̶̮̜̟̐ ̷͉̲̐͠f̴̣̘̼̀̆͘r̶̝̖͋͋͛̊i̵̤̰̇͜e̴̢̺̤̎ṉ̷͌̏̂͠d̴̥͖̂̅̋",
+            "cognoHazardThreat": "NULL"
+        }
+    ]
+}
